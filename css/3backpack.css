@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100;300;900&display=swap');
+             
+html, body {height: 100%; padding: 0px; width: 100%; margin: 0; border: 0;}
+
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+    filter: brightness(100%);
+    
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('../img/idea.jpg');
+        background-size: cover;
+        width: 100%;
+    }
+}
+
